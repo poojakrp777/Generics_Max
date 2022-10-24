@@ -6,24 +6,22 @@ using System.Threading.Tasks;
 
 namespace Maxfind_Generics
 {
-    internal class FindMax
+    class FindMaximum<T>
     {
-        public T FindMaxInteger<T>(T First, T Second, T Third) where T : IComparable
+        public T findMaxValue(T first, T second, T third)
         {
-            if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
+            if (Comparer<T>.Default.Compare(first, second) > 0 && Comparer<T>.Default.Compare(first, third) > 0)
             {
-                return First;
+                return first;
             }
-            if (Second.CompareTo(First) > 0 && Second.CompareTo(Third) > 0)
+            else if (Comparer<T>.Default.Compare(second, first) > 0 && Comparer<T>.Default.Compare(second, third) > 0)
             {
-                return Second;
+                return second;
             }
-            if (Third.CompareTo(First) > 0 && Third.CompareTo(Second) > 0)
+            else
             {
-
-                return Third;
+                return third;
             }
-            return default;
         }
     }
 }

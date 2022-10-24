@@ -12,10 +12,15 @@ namespace Maxfind_Generics
         {
             Console.WriteLine("Welcome to Find Max Using Generics Program");
 
-            FindMax findMaximum = new FindMax();
-            Console.WriteLine("\nMaximum Integer value is : " + findMaximum.FindMaxInteger<int>(179, 586, 201));
-            Console.WriteLine("\nMaximum Floating value is : " + findMaximum.FindMaxInteger<double>(7.3, 6.5, 2.0));
-            Console.WriteLine("\nMaximum String is : " + findMaximum.FindMaxInteger<string>("Pooja", "Abhi", "Basava"));
+
+            FindMaximum<int> findIntMax = new FindMaximum<int>();
+            FindMaximum<double> findMaximumDouble = new FindMaximum<double>();
+            FindMaximum<string> findstring = new FindMaximum<string>();
+
+            Console.WriteLine("\nMaximum of Integer value is : " + findIntMax.findMaxValue(599, 482, 635));
+            Console.WriteLine("\nMaximum Floating value is : " + findMaximumDouble.findMaxValue(304.45, 95.27, 467.18));
+            Console.WriteLine("\nMaximum String is : " + findstring.findMaxValue("Pooja", "Abhi", "Basava"));
+
         }
     }
 }
