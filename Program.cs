@@ -10,12 +10,9 @@ namespace Maxfind_Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Find Max Using Generics Program");
-
+            Console.WriteLine("Welcome to Find Maximum Using Generics");
             FindMax findMaximum = new FindMax();
-            Console.WriteLine("\nMaximum Integer value is : " + findMaximum.FindMaxInteger<int>(179, 586, 201));
-            Console.WriteLine("\nMaximum Floating value is : " + findMaximum.FindMaxInteger<double>(7.3, 6.5, 2.0));
-            Console.WriteLine("\nMaximum String is : " + findMaximum.FindMaxInteger<string>("Pooja", "Abhi", "Basava"));
+            Console.WriteLine("Maximum Number is: " + findMaximum.findMaxIntValue(45, 89, 67));
         }
     }
 }

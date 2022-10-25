@@ -8,7 +8,7 @@ namespace Maxfind_Generics
 {
     internal class FindMax
     {
-        public T FindMaxInteger<T>(T First, T Second, T Third) where T : IComparable
+        public int findMaxIntValue(int First, int Second, int Third)
         {
             if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
             {
