@@ -12,7 +12,7 @@ namespace Maxfind_Generics
         {
             Console.WriteLine("Welcome to Find Maximum Using Generics");
             FindMax findMaximum = new FindMax();
-            Console.WriteLine("Maximum of three floating values is: " + findMaximum.findMaxDoubleValue(8.9, 5.7, 3.4));
+            Console.WriteLine("Maximum of three floating values is: " + findMaximum.findMaxStringValue("Pooja","Abhi","Pavi"));
         }
     }
 }
